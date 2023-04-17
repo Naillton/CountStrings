@@ -30,4 +30,11 @@ fun main() {
     println("Temos $others letras(a) na frase")
     println("Temos $number numeros(o) na frase")
     println("Temos $space espacos(o) na frase")
+    val newPhrase: String = phrase.split("").reversed().joinToString("")
+    println("trocando caracteres de posicao: $newPhrase")
+    val changeWordsPosi: String = phrase.split(" ").reversed().joinToString(" ")
+    println("Mudando palavras de posicao: $changeWordsPosi")
+    // usando o array de chars para fazer uma verificaco como a string
+    val charPosition = text.reversed().joinToString("")
+    println(charPosition)
 }
